@@ -62,7 +62,7 @@ body {
     background-color: #333;
 }
 
-/* Link styling (kept from your original CSS) */
+/* Link styling */
 a {
     color: #333;
     text-decoration: none;
@@ -73,45 +73,39 @@ a:hover {
     color: #555;
 }
 
-p a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-p a:hover {
-    color: #555;
-}
-
 p {
     font-size: 1.2em; /* Adjust overall text size */
 }
 
-p a::before {
-    margin-right: 8px; /* Adds space between emoji and text */
-}
-
+/* Contact Info Styling */
 .info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Base font size */
+    gap: 5px; /* Space between each row */
 }
 
-.info span.label {
+/* Each row behaves like a line */
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Labels (KVK, BTW, 📞, 📧) */
+.label {
     display: inline-block;
-    min-width: 60px; /* Adjust spacing here */
+    min-width: 80px; /* Creates tab-like spacing */
     font-weight: bold;
-    text-align: right;
-    margin-right: 10px; /* Space between label and value */
+    text-align: left;
+    margin-right: 15px; /* Space between label and value */
 }
 
-.info a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.info a:hover {
-    color: #555;
+/* Increase font size for emoji labels */
+.label.emoji {
+    font-size: 1.5em; /* Makes the emojis larger */
+    line-height: 1; /* Reduces vertical spacing around the emoji */
+    display: flex;
+    align-items: center; /* Ensures emoji aligns properly */
 }
