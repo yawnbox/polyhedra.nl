@@ -94,7 +94,7 @@ p {
 }
 
 /* Labels (KVK, BTW, 📞, 📧) */
-.label {
+.label.text {
     display: inline-block;
     min-width: 30px; /* Creates tab-like spacing */
     font-weight: bold;
@@ -104,8 +104,9 @@ p {
 
 /* Increase font size for emoji labels */
 .label.emoji {
+    display: inline-block;
+    min-width: 30px; /* Maintain spacing for emojis */
     font-size: 1.5em; /* Makes the emojis larger */
     line-height: 1; /* Reduces vertical spacing around the emoji */
-    display: flex;
     align-items: center; /* Ensures emoji aligns properly */
 }
