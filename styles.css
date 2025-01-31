@@ -77,33 +77,33 @@ p {
     font-size: 1.2em; /* Adjust overall text size */
 }
 
-/* Contact Info Styling */
+/* Contact Info Container */
 .info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 1.2em; /* Base font size */
-    gap: 5px; /* Space between each row */
+    font-size: 1.2em;
+    gap: 5px; /* Consistent spacing between rows */
 }
 
-/* Each row behaves like a line */
+/* Ensures labels (text & emoji) have the same width */
 .row {
     display: flex;
     align-items: center;
-    width: 100%;
+    gap: 10px; /* Uniform spacing between label and value */
 }
 
-/* Labels (KVK, BTW, 📞, 📧) - All have the same spacing */
+/* Makes all labels (text + emojis) the same width */
 .label {
-    display: inline-block;
-    min-width: 30px; /* Ensures equal tab spacing for all labels */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50px; /* Adjust if needed */
     font-weight: bold;
-    text-align: left;
-    margin-right: 10px; /* Ensures equal spacing between label and text */
 }
 
-/* Increase font size for only the 📧 email emoji */
+/* Only increases the size of the email emoji */
 .label.email {
-    font-size: 1.5em; /* Makes only the email emoji larger */
-    line-height: 1; /* Reduces vertical spacing around the emoji */
+    font-size: 1.5em; /* Matches phone emoji size */
+    line-height: 1;
 }
