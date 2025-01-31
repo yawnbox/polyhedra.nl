@@ -93,17 +93,17 @@ p {
     width: 100%;
 }
 
-/* Labels (KVK, BTW, 📞, 📧) - Same smaller spacing for all */
+/* Labels (KVK, BTW, 📞, 📧) - All have the same spacing */
 .label {
     display: inline-block;
-    min-width: 30px; /* Reduced tab spacing */
+    min-width: 30px; /* Ensures equal tab spacing for all labels */
     font-weight: bold;
     text-align: left;
-    margin-right: 8px; /* Slightly reduced space between label and value */
+    margin-right: 10px; /* Ensures equal spacing between label and text */
 }
 
-/* Increase font size for emoji labels but keep spacing the same */
-.label.emoji {
-    font-size: 1.5em; /* Makes the emojis larger */
-    line-height: 1; /* Reduces extra vertical spacing around the emoji */
+/* Increase font size for only the 📧 email emoji */
+.label.email {
+    font-size: 1.5em; /* Makes only the email emoji larger */
+    line-height: 1; /* Reduces vertical spacing around the emoji */
 }
