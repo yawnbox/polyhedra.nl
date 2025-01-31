@@ -1,4 +1,4 @@
-/* General styles */
+/* General page styling */
 body {
     font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
     font-weight: normal;
@@ -11,33 +11,35 @@ body {
     height: 100vh;
 }
 
-/* Container for centering the content */
+/* Main container to center everything */
 .container {
     width: 90%;
     max-width: 900px;
+    display: flex;
+    justify-content: center; /* Ensures the entire content block is centered */
 }
 
 /* Flexbox layout for two-column structure */
 .content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Ensures logo and text are aligned vertically */
+    max-width: 600px; /* Restrict content width to prevent excessive stretching */
 }
 
-/* Left column (logo) */
+/* Left column (Logo) */
 .left-column {
-    flex: 0 0 auto; /* Prevents shrinking */
+    flex: 0 0 auto; /* Prevents logo from resizing */
     text-align: right;
-    margin-right: 50px; /* Adds buffer space between logo and text */
+    margin-right: 50px; /* Space between logo and text */
 }
 
-/* Right column (text) */
+/* Right column (Text) */
 .right-column {
     flex: 1; /* Takes up remaining space */
-    text-align: left;
+    text-align: left; /* Ensures text is left-aligned */
 }
 
-/* Logo styles */
+/* Logo styling */
 .logo {
     width: 200px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -53,14 +55,14 @@ body {
     margin-right: auto;
 }
 
-/* Line separator (optional, if you want a vertical line between columns) */
+/* Optional vertical separator line */
 .line {
     width: 2px;
     height: 60%;
     background-color: #333;
 }
 
-/* Links */
+/* Link styling (kept from your original CSS) */
 a {
     color: #333;
     text-decoration: none;
