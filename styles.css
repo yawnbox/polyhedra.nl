@@ -28,7 +28,7 @@ body {
 .left-column {
     flex: 0 0 auto; /* Prevents shrinking */
     text-align: right;
-    margin-right: 40px; /* Adds buffer space between logo and text */
+    margin-right: 50px; /* Adds buffer space between logo and text */
 }
 
 /* Right column (text) */
