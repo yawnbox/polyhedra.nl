@@ -96,7 +96,7 @@ p {
 /* Labels (KVK, BTW, 📞, 📧) */
 .label {
     display: inline-block;
-    min-width: 50px; /* Creates tab-like spacing */
+    min-width: 30px; /* Creates tab-like spacing */
     font-weight: bold;
     text-align: left;
     margin-right: 10px; /* Space between label and value */
