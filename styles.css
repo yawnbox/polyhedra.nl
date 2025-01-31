@@ -72,3 +72,21 @@ a {
 a:hover {
     color: #555;
 }
+
+p a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #555;
+}
+
+p {
+    font-size: 1.2em; /* Adjust overall text size */
+}
+
+p a::before {
+    margin-right: 8px; /* Adds space between emoji and text */
+}
