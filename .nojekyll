@@ -1,0 +1,7 @@
+/
+├─ index.html
+├─ .nojekyll
+└─ .well-known/
+   └─ autoconfig/
+      └─ mail/
+         └─ config-v1.1.xml
