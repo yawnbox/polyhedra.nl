@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="polyhedra.nl">
+    <domain>polyhedra.nl</domain>
+    <displayName>polyhedra Mail (iCloud)</displayName>
+    <displayShortName>polyhedra</displayShortName>
+
+    <!-- Incoming mail: iCloud IMAP -->
+    <incomingServer type="imap">
+      <hostname>imap.mail.me.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <!-- Password is sent inside TLS, which is what iCloud does -->
+      <authentication>password-cleartext</authentication>
+      <!-- Usually just the part before @ of your iCloud address -->
+      <username>%EMAILLOCALPART%</username>
+    </incomingServer>
+
+    <!-- Outgoing mail: iCloud SMTP -->
+    <outgoingServer type="smtp">
+      <hostname>smtp.mail.me.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <!-- iCloud officially wants the *full* iCloud address for SMTP -->
+      <username>%EMAILLOCALPART%@icloud.com</username>
+    </outgoingServer>
+
+    <!-- Make Thunderbird show the *actual* address the user typed -->
+    <identity>
+      <emailAddress>%EMAILADDRESS%</emailAddress>
+    </identity>
+  </emailProvider>
+</clientConfig>
